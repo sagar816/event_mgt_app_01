@@ -40,36 +40,36 @@ class SplashScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset(
-                  'assets/efi_logo.png',
+                  'assets/evg_logo.png',
                 ),
-                SizedBox(
-                  height: 18,
-                ),
-                Row(
-                  children: <Widget>[
-                    Text(
-                      "E.F.I-",
-                      style: TextStyle(
-                          color: Colors.teal,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 22),
-                    ),
-                    Text(
-                      "-NGO",
-                      style: TextStyle(
-                          color: Colors.brown,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 25),
-                    )
-                  ],
-                ),
-                SizedBox(height: 14),
+                // SizedBox(
+                //   height: 18,
+                // ),
+                // Row(
+                //   children: <Widget>[
+                //     Text(
+                //       "E.V.G-",
+                //       style: TextStyle(
+                //           color: Colors.teal,
+                //           fontWeight: FontWeight.w800,
+                //           fontSize: 22),
+                //     ),
+                //     Text(
+                //       "-NGO",
+                //       style: TextStyle(
+                //           color: Colors.brown,
+                //           fontWeight: FontWeight.w800,
+                //           fontSize: 25),
+                //     )
+                //   ],
+                // ),
+                // SizedBox(height: 6),
                 Text(
                   "A lot of stuff is going on near you! We want to share what's happening with planting trees.",
                   style: TextStyle(
                       color: Colors.teal, fontWeight: FontWeight.w500),
                 ),
-                SizedBox(height: 14),
+                SizedBox(height: 34),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(context,
@@ -94,5 +94,3 @@ class SplashScreen extends StatelessWidget {
     ));
   }
 }
-
-//27.24 

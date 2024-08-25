@@ -44,8 +44,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   children: <Widget>[
                     Image.asset(
-                      "assets/efi_logo.png",
-                      height: 35,
+                      "assets/evg_logo.png",
+                      height: 65,
+                      // width: 90,
                     ),
                     SizedBox(
                       width: 8,
@@ -53,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Row(
                       children: <Widget>[
                         Text(
-                          "EFI",
+                          "EVG",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 22,
@@ -83,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 5,
                 ),
                 Row(
                   children: <Widget>[
@@ -310,17 +311,14 @@ class PopularEventTile extends StatelessWidget {
                   Row(
                     children: <Widget>[
                       Image.asset(
-                        "assets/efi_logo.png",
+                        "assets/evg_logo.png",
                         height: 12,
                       ),
                       SizedBox(
                         width: 8,
                       ),
-                      Text(
-                        date,
-                        style: TextStyle(color: Colors.white,
-                        fontSize: 10)
-                      )
+                      Text(date,
+                          style: TextStyle(color: Colors.white, fontSize: 10))
                     ],
                   ),
                   SizedBox(
@@ -329,7 +327,7 @@ class PopularEventTile extends StatelessWidget {
                   Row(
                     children: <Widget>[
                       Image.asset(
-                        "assets/efi_logo.png",
+                        "assets/evg_logo.png",
                         height: 12,
                       ),
                       SizedBox(
