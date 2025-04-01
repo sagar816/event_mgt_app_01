@@ -31,10 +31,13 @@ class SplashScreen extends StatelessWidget {
         body: Stack(
       children: <Widget>[
         Container(
-            // color: Color.fromARGB(255, 73, 221, 43),
-            child: Image.asset("assets/img3.jpg", height: double.infinity)),
+            color: Color.fromARGB(255, 223, 253, 233),
+            child: Image.asset(
+              "assets/ema-12.jpg",
+              height: double.infinity,
+            )),
         Container(
-            padding: EdgeInsets.symmetric(horizontal: 50),
+            padding: EdgeInsets.symmetric(horizontal: 0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -42,9 +45,9 @@ class SplashScreen extends StatelessWidget {
                 Image.asset(
                   'assets/evg_logo.png',
                 ),
-                // SizedBox(
-                //   height: 18,
-                // ),
+                SizedBox(
+                  height: 18,
+                ),
                 // Row(
                 //   children: <Widget>[
                 //     Text(
@@ -64,12 +67,15 @@ class SplashScreen extends StatelessWidget {
                 //   ],
                 // ),
                 // SizedBox(height: 6),
-                Text(
-                  "A lot of stuff is going on near you! We want to share what's happening with planting trees.",
-                  style: TextStyle(
-                      color: Colors.teal, fontWeight: FontWeight.w500),
+                Padding(
+                  padding: const EdgeInsets.only(left: 25),
+                  child: Text(
+                    "A lot of stuff is going on near you! We want to share what's happening with planting trees.",
+                    style: TextStyle(
+                        color: Colors.teal, fontWeight: FontWeight.w500),
+                  ),
                 ),
-                SizedBox(height: 34),
+                SizedBox(height: 14),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(context,
@@ -78,12 +84,18 @@ class SplashScreen extends StatelessWidget {
                   child: Container(
                     child: Row(
                       children: <Widget>[
-                        Text("Get Started",
-                            style: TextStyle(color: Colors.teal, fontSize: 17)),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 25),
+                          child: Text("Get Started",
+                              style: TextStyle(
+                                  color: Colors.teal,
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold)),
+                        ),
                         SizedBox(
                           width: 5,
                         ),
-                        Icon(Icons.arrow_forward, color: Colors.brown)
+                        Icon(Icons.arrow_forward, color: Colors.green)
                       ],
                     ),
                   ),
